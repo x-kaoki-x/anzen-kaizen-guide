@@ -1,48 +1,48 @@
 function updateAll() {
-  var count = $(".todo").length;
-  var next = $(".todo input").first();
-  var nextTodoText = count ? next.val() : "(未登録)";
+  const count = $('.todo').length;
+  const next = $('.todo input').first();
+  const nextTodoText = count ? next.val() : '(未登録)';
 
-  $("#nextTodo").text("次のTODO: " + nextTodoText);
-  $("#todoCount").text("(全" + count + "件)");
+  $('#nextTodo').text(`次のTODO: ${nextTodoText}`);
+  $('#todoCount').text(`(全${count}件)`);
 
   if (count) {
-    $("#todoList").show();
-    $("#todoEmpty").hide();
+    $('#todoList').show();
+    $('#todoEmpty').hide();
   } else {
-    $("#todoList").hide();
-    $("#todoEmpty").show();
+    $('#todoList').hide();
+    $('#todoEmpty').show();
   }
 }
 
 function addTodo() {
-  var wrapper = $("<div>");
-  wrapper.addClass("todo");
+  const wrapper = $('<div>');
+  wrapper.addClass('todo');
 
-  var input = $("<input>");
-  input.attr("type", "text");
+  const input = $('<input>');
+  input.attr('type', 'text');
 
-  var deleteButton = $("<button>");
-  deleteButton.addClass("delete").text("削除");
+  const deleteButton = $('<button>');
+  deleteButton.addClass('delete').text('削除');
 
   wrapper.append(input);
   wrapper.append(deleteButton);
-  $("#todoList").append(wrapper);
+  $('#todoList').append(wrapper);
 }
 
-$(function() {
-  $("#addTodo").on("click", function() {
+$(() => {
+  $('#addTodo').on('click', () => {
     addTodo();
     updateAll();
   });
 
-  $("#todoList").on("input", ".todo:eq(0)", function() {
+  $('#todoList').on('input', '.todo:eq(0)', () => {
     updateAll();
   });
 
-  $("#todoList").on("click", ".delete", function() {
+  $('#todoList').on('click', '.delete', () => {
     $(this)
-      .closest(".todo")
+      .closest('.todo')
       .remove();
     updateAll();
   });

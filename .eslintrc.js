@@ -7,7 +7,7 @@ module.exports = {
         "jest" : true
     },
     "extends": [
-        "eslint:recommended",
+        "airbnb-base",
         "plugin:vue/essential",
         "plugin:prettier/recommended"
     ],
@@ -27,8 +27,7 @@ module.exports = {
         "prettier/prettier": [
             "error",
             {
-                "singleQuote": false,
-                "semi": true
+                "singleQuote": true
             }
         ]
     }

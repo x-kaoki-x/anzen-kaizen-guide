@@ -4,7 +4,7 @@
   "description": "書籍「レガシーフロントエンド安全改善ガイド」内の「実践編」で利用するサンプルコードリポジトリです。",
   "main": "index.js",
   "scripts": {
-    "test": "jest spec/e2e.spec.js visual.spec.js",
+    "test": "jest spec/e2e.spec.ts visual.spec.ts",
     "test:all": "jest",
     "lint": "eslint '**/*.js'"
   },
@@ -20,7 +20,12 @@
   },
   "homepage": "https://github.com/x-kaoki-x/anzen-kaizen-guide#readme",
   "devDependencies": {
+    "@types/expect-puppeteer": "^4.4.0",
+    "@types/jest": "^25.1.3",
+    "@types/jest-environment-puppeteer": "^4.3.1",
+    "@types/jest-image-snapshot": "^2.11.1",
     "@types/jquery": "^3.3.33",
+    "@types/node": "^13.7.7",
     "@typescript-eslint/eslint-plugin": "^2.21.0",
     "@typescript-eslint/parser": "^2.21.0",
     "eslint": "^6.8.0",
@@ -28,12 +33,12 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "^3.1.2",
-    "jest": "^24.0.0",
+    "jest": "^25.1.0",
     "jest-image-snapshot": "^2.12.0",
     "jest-puppeteer": "^4.4.0",
     "prettier": "^1.19.1",
     "puppeteer": "^2.1.1",
+    "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
-  },
-  "dependencies": {}
+  }
 }

@@ -31,16 +31,16 @@ function addTodo() {
 }
 
 $(() => {
-  $('#addTodo').on('click', () => {
+  $('#addTodo').on('click', function() {
     addTodo();
     updateAll();
   });
 
-  $('#todoList').on('input', '.todo:eq(0)', () => {
+  $('#todoList').on('input', '.todo:eq(0)', function() {
     updateAll();
   });
 
-  $('#todoList').on('click', '.delete', () => {
+  $('#todoList').on('click', '.delete', function() {
     $(this)
       .closest('.todo')
       .remove();

@@ -1,7 +1,10 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true,
+        "jquery" : true,
+        "jest" : true
     },
     "extends": [
         "eslint:recommended",
@@ -10,7 +13,8 @@ module.exports = {
     ],
     "globals": {
         "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+        "SharedArrayBuffer": "readonly",
+        "page": "readonly"
     },
     "parserOptions": {
         "ecmaVersion": 2018,
@@ -23,9 +27,8 @@ module.exports = {
         "prettier/prettier": [
             "error",
             {
-                "singleQuote": true,
-                "semi": true,
-                "trailingComma": "es5"
+                "singleQuote": false,
+                "semi": true
             }
         ]
     }

@@ -1,0 +1,28 @@
+{
+  "name": "anzen-kaizen-guide",
+  "version": "1.0.0",
+  "description": "書籍「レガシーフロントエンド安全改善ガイド」内の「実践編」で利用するサンプルコードリポジトリです。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x-kaoki-x/anzen-kaizen-guide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/x-kaoki-x/anzen-kaizen-guide/issues"
+  },
+  "homepage": "https://github.com/x-kaoki-x/anzen-kaizen-guide#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.2.1",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {}
+}

@@ -4,7 +4,8 @@
   "description": "書籍「レガシーフロントエンド安全改善ガイド」内の「実践編」で利用するサンプルコードリポジトリです。",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest spec/e2e.spec.js visual.spec.js",
+    "test:all": "jest"
   },
   "repository": {
     "type": "git",

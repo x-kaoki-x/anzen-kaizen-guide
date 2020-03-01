@@ -45,4 +45,5 @@ jspm_packages
 # Output of 'npm pack'
 *.tgz
 
-
+# spec
+spec/__image_snapshots__/__diff_output__
